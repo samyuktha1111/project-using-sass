@@ -1,0 +1,41 @@
+@import "mixin";
+@import "var";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+//operators
+//variables
+//nesting
+//mixin
+//parameters
+//partials
+
+
+
+.main-header {
+	width: 100vw;
+	height: 100vw;
+	@include flexprop;
+	background-color: $bg-color;
+	h1 {
+		@include commoncode(0.8rem, capitalize);
+
+		&:hover {
+			color: #c8d6e5;
+		}
+		&::after{content: " Family"}
+	}
+	
+
+	p {
+		@include commoncode(1.5rem, uppercase);
+		&:hover {
+			color: #c8d6e5;
+		}
+	}
+}

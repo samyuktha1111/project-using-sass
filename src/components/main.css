@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-header {
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-color: #10ac84;
+}
+.main-header h1 {
+  color: #222f3e;
+  justify-items: center;
+  font-size: 10rem;
+  letter-spacing: 0.8rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.main-header h1:hover {
+  color: #c8d6e5;
+}
+.main-header h1::after {
+  content: " Family";
+}
+.main-header p {
+  color: #222f3e;
+  justify-items: center;
+  font-size: 10rem;
+  letter-spacing: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.main-header p:hover {
+  color: #c8d6e5;
+}/*# sourceMappingURL=main.css.map */
